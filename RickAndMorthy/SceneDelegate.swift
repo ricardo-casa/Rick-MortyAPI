@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  RickAndMorthy
 //
-//  Created by Ricardo Carrillo Pech on 07/12/23.
+//  Created by Ricardo Carrillo on 07/12/23.
 //
 
 import UIKit
