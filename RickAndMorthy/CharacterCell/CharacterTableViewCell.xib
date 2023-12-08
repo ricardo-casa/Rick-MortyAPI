@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="176" id="KGk-i7-Jjw" customClass="CharacterTableViewCell" customModule="RickAndMorthy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="418" height="176"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="418" height="176"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rbh-jY-zU3">
+                        <rect key="frame" x="24" y="24" width="128" height="128"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="128" id="Xmv-XE-pbt"/>
+                            <constraint firstAttribute="width" constant="128" id="YYn-bv-5rf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4J-hP-9tg">
+                        <rect key="frame" x="184" y="45" width="202" height="33.666666666666657"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="id: 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="097-nd-ggv">
+                        <rect key="frame" x="184" y="24" width="202" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender: Unknown " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPb-Vg-Pvf">
+                        <rect key="frame" x="184" y="98.666666666666671" width="182" height="16"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type: Unknown " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0VM-fE-K8T">
+                        <rect key="frame" x="184" y="124.66666666666669" width="202" height="16"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0VM-fE-K8T" firstAttribute="top" secondItem="SPb-Vg-Pvf" secondAttribute="bottom" constant="10" id="56z-9a-X0f"/>
+                    <constraint firstAttribute="trailing" secondItem="0VM-fE-K8T" secondAttribute="trailing" constant="32" id="9Jp-mZ-Jc3"/>
+                    <constraint firstAttribute="bottom" secondItem="rbh-jY-zU3" secondAttribute="bottom" constant="24" id="AJQ-im-tx9"/>
+                    <constraint firstItem="rbh-jY-zU3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="AJY-qn-7Xu"/>
+                    <constraint firstAttribute="trailing" secondItem="N4J-hP-9tg" secondAttribute="trailing" constant="32" id="GTn-2T-mGT"/>
+                    <constraint firstItem="0VM-fE-K8T" firstAttribute="leading" secondItem="rbh-jY-zU3" secondAttribute="trailing" constant="32" id="SJK-n1-QTr"/>
+                    <constraint firstItem="097-nd-ggv" firstAttribute="leading" secondItem="rbh-jY-zU3" secondAttribute="trailing" constant="32" id="cYH-Cj-hWo"/>
+                    <constraint firstItem="N4J-hP-9tg" firstAttribute="leading" secondItem="rbh-jY-zU3" secondAttribute="trailing" constant="32" id="dDa-75-zax"/>
+                    <constraint firstItem="097-nd-ggv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="elf-Yn-Fbm"/>
+                    <constraint firstItem="SPb-Vg-Pvf" firstAttribute="top" secondItem="N4J-hP-9tg" secondAttribute="bottom" constant="20" id="fG4-y8-urX"/>
+                    <constraint firstItem="N4J-hP-9tg" firstAttribute="top" secondItem="097-nd-ggv" secondAttribute="bottom" id="k1g-uH-DYM"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="SPb-Vg-Pvf" secondAttribute="trailing" constant="32" id="oYi-Ua-bUf"/>
+                    <constraint firstItem="SPb-Vg-Pvf" firstAttribute="leading" secondItem="rbh-jY-zU3" secondAttribute="trailing" constant="32" id="pmD-29-B6V"/>
+                    <constraint firstItem="rbh-jY-zU3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="xr9-k2-kKZ"/>
+                    <constraint firstAttribute="trailing" secondItem="097-nd-ggv" secondAttribute="trailing" constant="32" id="yM0-5b-KBf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="characterId" destination="097-nd-ggv" id="Hln-qX-v82"/>
+                <outlet property="characterImageView" destination="rbh-jY-zU3" id="5dg-ZR-QG9"/>
+                <outlet property="characterName" destination="N4J-hP-9tg" id="hbp-Yi-vay"/>
+                <outlet property="characterSpecies" destination="SPb-Vg-Pvf" id="NcI-5W-RUl"/>
+                <outlet property="characterType" destination="0VM-fE-K8T" id="qlM-sT-FvO"/>
+            </connections>
+            <point key="canvasLocation" x="41.221374045801525" y="27.464788732394368"/>
+        </tableViewCell>
+    </objects>
+</document>
